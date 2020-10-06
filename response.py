@@ -5,7 +5,8 @@ import csv
 import telegram
 from telebot.credentials import bot_token, bot_user_name,URL
 
-csv_url="https://docs.google.com/spreadsheets/d/189_EfTjBfS2PHvMy2FysQfGLMVsxI00qPzSNeGjyfOU/export?format=csv&id=189_EfTjBfS2PHvMy2FysQfGLMVsxI00qPzSNeGjyfOU&gid=0"
+#insert google sheet url
+csv_url="[google sheet url here]"
 
 csv_file=requests.get(url=csv_url)
 open("chatbot.csv", "wb").write(csv_file.content)
